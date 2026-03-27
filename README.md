@@ -1,38 +1,27 @@
-# Customer-Churn-Prediction
+# Customer Churn Prediction
 
-## 🔧 Preprocessing Steps
+## Overview
+This repository contains a machine learning model to predict customer churn. Understanding customer churn is crucial for businesses to develop strategies that enhance customer retention.
 
-1. **Data Cleaning**:
-   - Removed non-predictive columns: `RowNumber`, `CustomerId`, `Surname`
-   - Zero missing values found in dataset
+## Visualization Sections
+- **Customer Segmentation:** Visualize how different customer segments are related to churn.
+- **Feature Importance:** Include plots that illustrate the importance of various features in predicting churn.
+- **Churn Prediction Distribution:** Show graphs that represent the distribution of churn predictions.
 
-2. **Feature Engineering**:
-   - Label Encoded: `Gender` (Female:0, Male:1)
-   - One-Hot Encoded: `Geography` (with drop_first=True)
-   - Standard Scaled all numerical features
+## Performance Metrics Diagrams
+- **Confusion Matrix:** A graphical representation of the model's performance.
+- **ROC Curve:** Visualize the trade-off between sensitivity and specificity.
+- **Precision-Recall Curve:** Examine the balance between precision and recall for the model's predictions.
 
-## 🤖 Model Selection
+## How to Embed Images
+- To embed images in the documentation, upload your images to the repository and reference the blob link. Use the following syntax for embedding:
+  
+  ```markdown
+  ![Alt Text](path/to/image)
+  ```  
+- For example:
+  
+  ![Confusion Matrix](images/confusion_matrix.png)
 
-**Random Forest Classifier** was implemented with:
-- 100 estimators (n_estimators=100)
-- Default hyperparameters
-- Random state fixed (42) for reproducibility
-
-## 📊 Performance Analysis
-
-### Key Metrics:
-
-| Metric       | Score  |
-|--------------|--------|
-| Accuracy     | 0.86   |
-| Precision    | 0.78   |
-| Recall       | 0.43   |
-| F1 Score     | 0.55   |
-| ROC AUC      | 0.84   |
-
-### Visualizations:
-- Confusion Matrix
-- ROC Curve (AUC = 0.84)
-- Feature Importance Plot
-- Class Distribution Chart
-
+## Conclusion
+This model serves as a baseline for predicting customer churn and can be improved upon with further feature engineering and model tuning.
